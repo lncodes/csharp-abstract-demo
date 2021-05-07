@@ -26,7 +26,8 @@ namespace Lncodes.Example.Abstract
         /// <exception cref="ArgumentOutOfRangeException">Thrown when random value > 2</exception>
         private static EnemyController GetRandomEnemy()
         {
-            switch (new Random().Next(3))
+            var randomValue = new Random().Next(3);
+            switch (randomValue)
             {
                 case 0:
                     return new TrollEnemyController();
@@ -36,7 +37,7 @@ namespace Lncodes.Example.Abstract
                     return new OrcEnemyController();
                 default:
                     const string exceptionMessage = "Random value out of range";
-                    throw new ArgumentOutOfRangeException(exceptionMessage);
+                    throw new ArgumentOutOfRangeException(nameof(randomValue), exceptionMessage);
             }
         }
     }
