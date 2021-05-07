@@ -37,7 +37,7 @@ namespace Lncodes.Example.Abstract
                     return new OrcEnemyController();
                 default:
                     const string exceptionMessage = "Random value out of range";
-                    throw new ArgumentOutOfRangeException(nameof(randomValue), exceptionMessage);
+                    throw new ArgumentOutOfRangeException(exceptionMessage, nameof(randomValue));
             }
         }
     }
