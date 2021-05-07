@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 
 namespace Lncodes.Example.Abstract
 {
@@ -25,7 +26,8 @@ namespace Lncodes.Example.Abstract
         /// <exception cref="ArgumentOutOfRangeException">Thrown when random value > 2</exception>
         private static EnemyController GetRandomEnemy()
         {
-            var randomValue = new Random().Next(3);
+            var random = new Random();
+            var randomValue = random.Next(3);
             switch (randomValue)
             {
                 case 0:
