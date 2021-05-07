@@ -4,6 +4,11 @@ namespace Lncodes.Example.Abstract
 {
     public class Program
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public Program() { }
+
         static void Main()
         {
             //Create Enemy Instance
@@ -17,10 +22,11 @@ namespace Lncodes.Example.Abstract
         /// Method to random enemy
         /// </summary>
         /// <return cref="EnemyController"></return>
-        /// <exception cref="System.Exception">Thrown when random value > 2</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when random value > 2</exception>
         private static EnemyController GetRandomEnemy()
         {
-            switch (new Random().Next(3))
+            var randomValue = new Random().Next(3);
+            switch (randomValue)
             {
                 case 0:
                     return new TrollEnemyController();
@@ -29,7 +35,7 @@ namespace Lncodes.Example.Abstract
                 case 2:
                     return new OrcEnemyController();
                 default:
-                    throw new System.Exception("Error Random Enemy");
+                    throw new ArgumentOutOfRangeException();
             }
         }
     }
