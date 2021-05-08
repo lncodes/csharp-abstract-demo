@@ -12,31 +12,43 @@ namespace Lncodes.Example.Abstract
         /// <summary>
         /// Main program
         /// </summary>
-        static void Main()
+        private static void Main()
         {
-            //Create Enemy Instance
-            var enemy = GetRandomEnemy();
+            var enemyId = RandomEnemyId();
+            var enemy = CreateEnemyTyeps(enemyId);
             enemy.Run();
             enemy.Walk();
             enemy.Attack();
         }
-
+              
         /// <summary>
         /// Method to random enemy
         /// </summary>
         /// <return cref="EnemyController"></return>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when random value > 2</exception>
-        private static EnemyController GetRandomEnemy()
+        private static EnemyController CreateEnemyTyeps(int enemyId)
         {
-            switch (new Random().Next(3))
+            switch (enemyId)
             {
                 case 0:
-                    return new TrollEnemyController();
+                    return new OrcEnemyController();
                 case 1:
+                    return new TrollEnemyController();
+                case 2:
                     return new GoblinEnemyController();
                 default:
-                    return new OrcEnemyController();
+                    throw new ArgumentOutOfRangeException(nameof(enemyId));
             }
+        }
+
+        /// <summary>
+        /// Method for random enemy id
+        /// </summary>
+        /// <returns cref=int></returns>
+        private static int RandomEnemyId()
+        {
+            int ammountOfEnemyType = 3;
+            return new Random().Next(ammountOfEnemyType);
         }
     }
 }
