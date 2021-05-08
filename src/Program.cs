@@ -27,9 +27,9 @@ namespace Lncodes.Example.Abstract
         /// </summary>
         /// <return cref="EnemyController"></return>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when random value > 2</exception>
-        private static EnemyController CreateEnemyTypesById(int enemyId)
+        private static EnemyController CreateEnemyTypesById(int enemyTypesId)
         {
-            switch (enemyId)
+            switch (enemyTypesId)
             {
                 case 0:
                     return new OrcEnemyController();
@@ -38,7 +38,7 @@ namespace Lncodes.Example.Abstract
                 case 2:
                     return new GoblinEnemyController();
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(enemyId));
+                    throw new ArgumentOutOfRangeException(nameof(enemyTypesId));
             }
         }
 
@@ -49,7 +49,7 @@ namespace Lncodes.Example.Abstract
         private static int GetRandomEnemyTypesId()
         {
             var ammountOfEnemyTypes = 3;
-            return RandomNumberGenerator.GetInt32(0, ammountOfEnemyTypes);
+            return RandomNumberGenerator.GetInt32(ammountOfEnemyTypes);
         }
     }
 }
