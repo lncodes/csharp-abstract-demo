@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography;
 
 namespace Lncodes.Example.Abstract
 {
@@ -10,6 +9,9 @@ namespace Lncodes.Example.Abstract
         /// </summary>
         protected Program() { }
 
+        /// <summary>
+        /// Main program
+        /// </summary>
         static void Main()
         {
             //Create Enemy Instance
@@ -32,10 +34,8 @@ namespace Lncodes.Example.Abstract
                     return new TrollEnemyController();
                 case 1:
                     return new GoblinEnemyController();
-                case 2:
-                    return new OrcEnemyController();
                 default:
-                    throw new NullReferenceException();
+                    return new OrcEnemyController();
             }
         }
     }
