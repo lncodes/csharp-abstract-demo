@@ -4,6 +4,8 @@ namespace Lncodes.Example.Abstract
 {
     public class Program
     {
+        private static readonly Random random = new Random();
+
         /// <summary>
         /// Constructor
         /// </summary>
@@ -14,8 +16,8 @@ namespace Lncodes.Example.Abstract
         /// </summary>
         private static void Main()
         {
-            var enemyId = RandomEnemyId();
-            var enemy = CreateEnemyTyeps(enemyId);
+            var enemyId = GetRandomEnemyTypesId();
+            var enemy = CreateEnemyTypes(enemyId);
             enemy.Run();
             enemy.Walk();
             enemy.Attack();
@@ -26,7 +28,7 @@ namespace Lncodes.Example.Abstract
         /// </summary>
         /// <return cref="EnemyController"></return>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when random value > 2</exception>
-        private static EnemyController CreateEnemyTyeps(int enemyId)
+        private static EnemyController CreateEnemyTypes(int enemyId)
         {
             switch (enemyId)
             {
@@ -42,13 +44,14 @@ namespace Lncodes.Example.Abstract
         }
 
         /// <summary>
-        /// Method for random enemy id
+        /// Method for random enemy types id
         /// </summary>
         /// <returns cref=int></returns>
-        private static int RandomEnemyId()
+        private static int GetRandomEnemyTypesId()
         {
-            int ammountOfEnemyType = 3;
-            return new Random().Next(ammountOfEnemyType);
+            var ammountOfEnemyTypes = 3;
+            return random.Next(ammountOfEnemyTypes);
         }
+
     }
 }
