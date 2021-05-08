@@ -1,11 +1,10 @@
 ﻿using System;
+using System.Security.Cryptography;
 
 namespace Lncodes.Example.Abstract
 {
     public class Program
     {
-        private static readonly Random random = new Random();
-
         /// <summary>
         /// Constructor
         /// </summary>
@@ -17,7 +16,7 @@ namespace Lncodes.Example.Abstract
         private static void Main()
         {
             var enemyId = GetRandomEnemyTypesId();
-            var enemy = CreateEnemyTypes(enemyId);
+            var enemy = CreateEnemyTypesById(enemyId);
             enemy.Run();
             enemy.Walk();
             enemy.Attack();
@@ -28,7 +27,7 @@ namespace Lncodes.Example.Abstract
         /// </summary>
         /// <return cref="EnemyController"></return>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when random value > 2</exception>
-        private static EnemyController CreateEnemyTypes(int enemyId)
+        private static EnemyController CreateEnemyTypesById(int enemyId)
         {
             switch (enemyId)
             {
@@ -50,8 +49,7 @@ namespace Lncodes.Example.Abstract
         private static int GetRandomEnemyTypesId()
         {
             var ammountOfEnemyTypes = 3;
-            return random.Next(ammountOfEnemyTypes);
+            return RandomNumberGenerator.GetInt32(0, ammountOfEnemyTypes);
         }
-
     }
 }
