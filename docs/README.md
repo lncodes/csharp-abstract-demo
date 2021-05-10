@@ -38,7 +38,7 @@ Here some objective we want to achieve from this project :
 
 <h2 id="setup">🧰 Setup </h2>
 
-> The current setup using Visual Studio as the IDE
+> For this setup, I use Visual Studio as the IDE.
 ### ⚙️ Installation 
 Follow these steps to install the **C# Abstract** project
 1. Clone or download this project.
