@@ -28,7 +28,7 @@
 
 <h2 id="introduction">✨ Introduction</h2>
 
-This project will show you an example implementation of **C# Abstract**. For more information about this project, you can refer to [Documentation](https://lncodes.com/tutorial/csharp/abstract/).
+This project is part of the tutorial content, and this project will show you an example implementation of **C# Abstract**. To see the tutorial content, you can refer to the [Tutorial Content](https://lncodes.com/tutorial/csharp/abstract/). 
 
 <h3 id="objective">🎯 Objective</h3>
 
@@ -60,7 +60,7 @@ Want to contribute to this project? Please read our project [Contribution Guidel
 
 <h2 id="discuss">💬 Discuss</h2>
 
-If you have any questions about this project, you can go to [Discussion Forum](https://github.com/lncodes/csharp-abstract/discussions) or directly comment on [Documentation](https://lncodes.com/tutorial/csharp/abstract/) page.
+If you have any questions about this project, you can go to [Discussion Forum](https://github.com/lncodes/csharp-abstract/discussions) or directly comment on the [Tutorial Content](https://lncodes.com/tutorial/csharp/abstract/).
 
 <h2 id="support">💌 Support</h2>
 
