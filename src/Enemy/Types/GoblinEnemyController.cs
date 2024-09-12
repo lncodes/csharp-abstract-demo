@@ -1,27 +1,26 @@
 ﻿using System;
 
-namespace Lncodes.Example.Abstract
+namespace Lncodes.Example.Abstract;
+
+public sealed class GoblinEnemyController : EnemyController
 {
-    public sealed class GoblinEnemyController : EnemyController
+    // Initial stamina for the goblin.
+    protected override int Stamina { get; set; } = 10;
+
+    ///<inheritdoc cref="EnemyController.Run"/>
+    public override void Run()
     {
-        ///<inheritdoc cref="EnemyController.Stamina"/>
-        protected override int Stamina { get; set; } = 10;
+        Stamina -= 4;
+        Console.WriteLine("Goblin is running");
+        Console.WriteLine($"Goblin's remaining stamina: {Stamina}");
+        Console.WriteLine();
+    }
 
-        ///<inheritdoc cref="EnemyController.Run"/>
-        public override void Run()
-        {
-            Stamina--;
-            Console.WriteLine("Goblin run");
-            Console.WriteLine($"Goblin Stamina = {Stamina}");
-            Console.WriteLine();
-        }
-
-        ///<inheritdoc cref="EnemyController.Attack"/>
-        public override void Attack()
-        {
-            Stamina -= 2;
-            base.Attack();
-            Console.WriteLine($"Goblin Stamina = {Stamina}");
-        }
+    ///<inheritdoc cref="EnemyController.Rest"/>
+    public override void Rest()
+    {
+        Stamina++;
+        Console.WriteLine("Goblin is resting");
+        Console.WriteLine($"Goblin's remaining stamina: {Stamina}");
     }
 }

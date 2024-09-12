@@ -1,27 +1,26 @@
 ﻿using System;
 
-namespace Lncodes.Example.Abstract
+namespace Lncodes.Example.Abstract;
+
+public sealed class TrollEnemyController : EnemyController
 {
-    public sealed class TrollEnemyController : EnemyController
+    // Initial stamina for the troll.
+    protected override int Stamina { get; set; } = 30;
+
+    ///<inheritdoc cref="EnemyController.Run"/>
+    public override void Run()
     {
-        ///<inheritdoc cref="EnemyController.Stamina"/>
-        protected override int Stamina { get; set; } = 30;
+        Stamina -= 10;
+        Console.WriteLine("Troll is running");
+        Console.WriteLine($"Troll's remaining stamina: {Stamina}");
+        Console.WriteLine();
+    }
 
-        ///<inheritdoc cref="EnemyController.Run"/>
-        public override void Run()
-        {
-            Stamina -= 3;
-            Console.WriteLine("Troll run");
-            Console.WriteLine($"Troll Stamina = {Stamina}");
-            Console.WriteLine();
-        }
-
-        ///<inheritdoc cref="EnemyController.Attack"/>
-        public override void Attack()
-        {
-            Stamina -= 4;
-            base.Attack();
-            Console.WriteLine($"Troll Stamina = {Stamina}");
-        }
+    ///<inheritdoc cref="EnemyController.Rest"/>
+    public override void Rest()
+    {
+        Stamina += 4;
+        Console.WriteLine("Troll is resting");
+        Console.WriteLine($"Troll's remaining stamina: {Stamina}");
     }
 }

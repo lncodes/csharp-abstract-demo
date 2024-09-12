@@ -1,55 +1,44 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace Lncodes.Example.Abstract
+namespace Lncodes.Example.Abstract;
+
+internal static class Program
 {
-    public class Program
+    /// <summary>
+    /// Entry point for the application.
+    /// </summary>
+    private static void Main()
     {
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        protected Program() { }
+        var enemyId = GetRandomEnemyId();
+        var enemy = CreateEnemyTypesById(enemyId);
+        enemy.DisplayInitialStaminaPoint();
+        enemy.Run();
+        enemy.Rest();
+    }
 
-        /// <summary>
-        /// Main program
-        /// </summary>
-        private static void Main()
+    /// <summary>
+    /// Creates an instance of an enemy controller based on the specified enemy ID.
+    /// </summary>
+    /// <param name="enemyId">The ID of the enemy type to create.</param>
+    /// <returns>An instance of the <see cref="EnemyController"/> subclass corresponding to the enemy ID.</returns>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when the enemy ID is out of the valid range.</exception>
+    private static EnemyController CreateEnemyTypesById(int enemyId) =>
+        enemyId switch
         {
-            var enemyId = GetRandomEnemyTypesId();
-            var enemy = CreateEnemyTypesById(enemyId);
-            enemy.Run();
-            enemy.Walk();
-            enemy.Attack();
-        }
-              
-        /// <summary>
-        /// Method to random enemy
-        /// </summary>
-        /// <return cref="EnemyController"></return>
-        /// <exception cref="ArgumentOutOfRangeException">Thrown when random value > 2</exception>
-        private static EnemyController CreateEnemyTypesById(int enemyTypesId)
-        {
-            switch (enemyTypesId)
-            {
-                case 0:
-                    return new OrcEnemyController();
-                case 1:
-                    return new TrollEnemyController();
-                case 2:
-                    return new GoblinEnemyController();
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(enemyTypesId));
-            }
-        }
+            0 => new OrcEnemyController(),
+            1 => new TrollEnemyController(),
+            2 => new GoblinEnemyController(),
+            _ => throw new ArgumentOutOfRangeException(nameof(enemyId)),
+        };
 
-        /// <summary>
-        /// Method for random enemy types id
-        /// </summary>
-        /// <returns cref=int></returns>
-        private static int GetRandomEnemyTypesId()
-        {
-            var ammountOfEnemyTypes = 3;
-            return RandomNumberGenerator.GetInt32(ammountOfEnemyTypes);
-        }
+    /// <summary>
+    /// Generates a random enemy ID.
+    /// </summary>
+    /// <returns>A random enemy ID as an integer.</returns>
+    private static int GetRandomEnemyId()
+    {
+        const int amountOfEnemyTypes = 3;
+        return RandomNumberGenerator.GetInt32(amountOfEnemyTypes);
     }
 }
