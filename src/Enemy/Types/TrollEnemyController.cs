@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lncodes.Example.Abstract;
+namespace Lncodes.Examples.Abstract;
 
 public sealed class TrollEnemyController : EnemyController
 {
