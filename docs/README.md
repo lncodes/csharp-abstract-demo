@@ -7,8 +7,8 @@
 
 <h1 align="center">C# Abstract Demo</h1>
 <p align="center">
-  <a href="{{REPOSITORY_URL}}/actions/workflows/build-and-publish.yml">
-    <img src="{{REPOSITORY_URL}}/actions/workflows/build-and-publish.yml/badge.svg" />
+  <a href="{{REPOSITORY_URL}}/actions/workflows/build.yml">
+    <img src="{{REPOSITORY_URL}}/actions/workflows/build.yml/badge.svg" />
   </a>
   <a href="https://sonarcloud.io/dashboard?id=lncodes_{{REPOSITORY_NAME}}">
     <img src="https://sonarcloud.io/api/project_badges/measure?project=lncodes_{{REPOSITORY_NAME}}&metric=alert_status" />
