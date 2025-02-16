@@ -1,17 +1,17 @@
 <br>
 <p align="center">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://lncodes.com">
-    <img src="https://github.com/lncodes/docs/blob/main/assets/animations/lncodes-logo-animation.gif" height="175"></img>
+    <img src="https://github.com/lncodes/docs/blob/main/assets/animations/lncodes-logo-animation.gif" height="175" />
   </a>
 </p>
 
-<h1 align="center">C# Abstract</h1>
+<h1 align="center">C# Abstract Demo</h1>
 <p align="center">
-  <a href="https://github.com/lncodes/csharp-abstract/actions/workflows/build-and-publish-dotnet.yml">
-      <img src="https://github.com/lncodes/csharp-abstract/actions/workflows/build-and-publish-dotnet.yml/badge.svg">
+  <a href="https://github.com/lncodes/csharp-abstract-demo/actions/workflows/build.yml">
+    <img src="https://github.com/lncodes/csharp-abstract-demo/actions/workflows/build.yml/badge.svg" />
   </a>
-  <a href="https://sonarcloud.io/dashboard?id=lncodes_csharp-abstract">
-      <img src="https://sonarcloud.io/api/project_badges/measure?project=lncodes_csharp-abstract&metric=alert_status">
+  <a href="https://sonarcloud.io/dashboard?id=lncodes_csharp-abstract-demo">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=lncodes_csharp-abstract-demo&metric=alert_status" />
   </a>
 </p>
 
@@ -26,46 +26,70 @@
 
 <h2 id="introduction">🌟 Introduction</h2>
 
-This repository demonstrates the use of C# Abstract through a simple console application. In this repository, abstract classes serve as blueprints for defining common characteristics and behaviors for different enemy types, such as stamina and run. By using an abstract class, a standardized blueprint for different enemy types is established, which helps reduce redundancy, enhances maintainability, and ensures a consistent interface across various enemy types.
+This repository demonstrates the use of C# Abstract through a simple console application. In this project, abstract classes act as blueprints for defining common characteristics and behaviours across various enemy types, such as stamina and running abilities. Using an abstract class establishes a standardized blueprint for different enemy types, which helps reduce redundancy, enhances maintainability, and ensures a consistent interface across various enemy types.
 
 For more information about C# Abstract, check out the blog post: [C# Abstract - Last Night Codes](https://www.lncodes.com/csharp-abstract).
 
 <h2 id="installation">📦 Installation</h2>
 
-To set up this C# console application, follow these steps:
+To set up this C# project on your local machine, follow the steps below after ensuring the system requirements are met.
 
-1. Clone or download the project.
-    ``` bash 
-    git clone https://github.com/lncodes/csharp-abstract.git
+<h3>System Requirements</h3>
+
+- **.NET SDK:** Version 8 or later ([Download .NET](https://dotnet.microsoft.com/en-us/download)).
+
+- **Operating System:** Windows, macOS, or Linux.
+
+<h3>Steps to Install</h3>
+
+1. **Clone or Download the Project**
+
+    - **Clone the Repository**
+    
+      If you have Git installed, execute the following command to clone the repository:
+
+      ```bash
+      git clone https://github.com/lncodes/csharp-abstract-demo.git
+      ```
+
+    - **Download as ZIP**
+
+      If you don't have Git, you can download the project as a ZIP file by clicking the "Code" button on the GitHub page and selecting "Download ZIP."
+
+2. **Navigate to the Project Directory**
+
+    Execute the following command to change to the project directory:
+    ```bash
+    cd csharp-abstract-demo
     ```
 
-2. Open the project
-    - Open Visual Studio and select File > Open > Project/Solution.
+    > **Note:** Make sure you're in the correct parent directory where the `csharp-abstract-demo` folder is located.
     
-    - Open the .sln file located in the main folder.
+3. **Restore Dependencies**
+
+    Execute the following command to restore all the project dependencies:
+    ```bash
+    dotnet restore
+    ```
+    
+    This command will download and install any necessary packages specified in the project.
 
 <h2 id="usage">🧑‍💻 Usage</h2>
 
-To run the console application, there's serval options can be use:
+To run the console application, execute the following command:
+  ```bash
+    dotnet run
+  ```
 
-1. From Visual Studio
-    - Press Ctrl + F5 to run without debugging.
-
-    - Press F5 or click the green start button to run with debugging.
-    
-2. From .NET CLI
-
-    ```bash
-     dotnet run
-     ```
+This will compile and run your console application in the terminal.
 
 <h2 id="contribute">🤝 Contribute</h2>
 
-We appreciate your interest in contributing to this project! For detailed guidelines on how to report issues and submit pull requests, please check out our [Contributing Guidelines](CONTRIBUTING.md).
+We appreciate your interest in contributing to this project! Please check out our [Contributing Guidelines](CONTRIBUTING.md) for detailed guidelines on reporting issues and submitting pull requests.
 
 <h2 id="discussion">💬 Discussion</h2>
 
-If you have any questions or want to discuss anything related to this project, visit our [Discussion Forum](https://github.com/lncodes/csharp-abstract/discussions). You can also leave comments on [C# Abstract - Last Night Codes](https://lncodes.com/csharp-abstract) blog post for more in-depth discussion on this project’s topics.
+If you have any questions or wish to discuss anything related to this project, visit our [Discussion Forum](https://github.com/lncodes/csharp-abstract-demo/discussions). You can also leave comments on the [BLOG_NAME - Last Night Codes](https://lncodes.com/csharp-abstract) blog post for a more in-depth discussion of this project's topics.
 
 <h2 id="license"> 📋 License</h2>
 

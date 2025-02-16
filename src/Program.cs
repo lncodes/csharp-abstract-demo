@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Security.Cryptography;
 
-namespace Lncodes.Example.Abstract;
+namespace Lncodes.AbstractDemo;
 
 internal static class Program
 {
@@ -15,6 +14,7 @@ internal static class Program
         enemy.DisplayInitialStaminaPoint();
         enemy.Run();
         enemy.Rest();
+        Console.ReadLine();
     }
 
     /// <summary>
@@ -39,6 +39,6 @@ internal static class Program
     private static int GetRandomEnemyId()
     {
         const int amountOfEnemyTypes = 3;
-        return RandomNumberGenerator.GetInt32(amountOfEnemyTypes);
+        return Random.Shared.Next(amountOfEnemyTypes);
     }
 }
