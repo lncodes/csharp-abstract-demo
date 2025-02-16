@@ -1,17 +1,17 @@
 <br>
 <p align="center">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://lncodes.com">
-    <img src="https://github.com/lncodes/docs/blob/main/assets/animations/lncodes-logo-animation.gif" height="175"></img>
+    <img src="https://github.com/lncodes/docs/blob/main/assets/animations/lncodes-logo-animation.gif" height="175" />
   </a>
 </p>
 
-<h1 align="center">C# Abstract</h1>
+<h1 align="center">C# Abstract Demo</h1>
 <p align="center">
-  <a href="https://github.com/lncodes/csharp-abstract/actions/workflows/build-and-publish-dotnet.yml">
-      <img src="https://github.com/lncodes/csharp-abstract/actions/workflows/build-and-publish-dotnet.yml/badge.svg">
+  <a href="{{REPOSITORY_URL}}/actions/workflows/build-and-publish.yml">
+    <img src="{{REPOSITORY_URL}}/actions/workflows/build-and-publish.yml/badge.svg" />
   </a>
-  <a href="https://sonarcloud.io/dashboard?id=lncodes_csharp-abstract">
-      <img src="https://sonarcloud.io/api/project_badges/measure?project=lncodes_csharp-abstract&metric=alert_status">
+  <a href="https://sonarcloud.io/dashboard?id=lncodes_{{REPOSITORY_NAME}}">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=lncodes_{{REPOSITORY_NAME}}&metric=alert_status" />
   </a>
 </p>
 
@@ -26,13 +26,13 @@
 
 <h2 id="introduction">🌟 Introduction</h2>
 
-This repository demonstrates the use of C# Abstract through a simple console application. In this repository, abstract classes serve as blueprints for defining common characteristics and behaviors for different enemy types, such as stamina and run. By using an abstract class, a standardized blueprint for different enemy types is established, which helps reduce redundancy, enhances maintainability, and ensures a consistent interface across various enemy types.
+This repository demonstrates the use of C# Abstract through a simple console application. In this project, abstract classes act as blueprints for defining common characteristics and behaviours across various enemy types, such as stamina and running abilities. Using an abstract class establishes a standardized blueprint for different enemy types, which helps reduce redundancy, enhances maintainability, and ensures a consistent interface across various enemy types.
 
 For more information about C# Abstract, check out the blog post: [C# Abstract - Last Night Codes](https://www.lncodes.com/csharp-abstract).
 
 <h2 id="installation">📦 Installation</h2>
 
-To set up this C# project on your local machine, ensure that the system requirements are met, and then follow these instructions:
+To set up this C# project on your local machine, follow the steps below after ensuring the system requirements are met.
 
 <h3>System Requirements</h3>
 
@@ -46,7 +46,7 @@ To set up this C# project on your local machine, ensure that the system requirem
 
     - **Clone the Repository**
     
-      Use Git to create a local copy by executing the following command:
+      If you have Git installed, execute the following command to clone the repository:
 
       ```bash
       git clone {{REPOSITORY_URL}}.git
@@ -54,43 +54,42 @@ To set up this C# project on your local machine, ensure that the system requirem
 
     - **Download as ZIP**
 
-      If Git is not available, you can download the project as a ZIP file from the GitHub repository by clicking the “Code” button and selecting the “Download ZIP" option.
+      If you don't have Git, you can download the project as a ZIP file by clicking the "Code" button on the GitHub page and selecting "Download ZIP."
 
 2. **Navigate to the Project Directory**
 
-    Navigate to the project directory containing the source files by executing the following command:
-
+    Execute the following command to change to the project directory:
     ```bash
-    cd {{REPOSITORY_NAME}}/src
+    cd {{REPOSITORY_NAME}}
     ```
 
     > **Note:** Make sure you're in the correct parent directory where the `{{REPOSITORY_NAME}}` folder is located.
     
 3. **Restore Dependencies**
 
-    Install all required packages and libraries by executing the following command:
-
+    Execute the following command to restore all the project dependencies:
     ```bash
     dotnet restore
     ```
-
-    This command uses NuGet to download and install the dependencies specified in the project’s configuration files.
+    
+    This command will download and install any necessary packages specified in the project.
 
 <h2 id="usage">🧑‍💻 Usage</h2>
 
-To run the console application, by executing the following command:
+To run the console application, execute the following command:
+  ```bash
+    dotnet run
+  ```
 
-    ```bash
-     dotnet run
-     ```
+This will compile and run your console application in the terminal.
 
 <h2 id="contribute">🤝 Contribute</h2>
 
-We appreciate your interest in contributing to this project! For detailed guidelines on how to report issues and submit pull requests, please check out our [Contributing Guidelines](CONTRIBUTING.md).
+We appreciate your interest in contributing to this project! Please check out our [Contributing Guidelines](CONTRIBUTING.md) for detailed guidelines on reporting issues and submitting pull requests.
 
 <h2 id="discussion">💬 Discussion</h2>
 
-If you have any questions or want to discuss anything related to this project, visit our [Discussion Forum](https://github.com/lncodes/csharp-abstract/discussions). You can also leave comments on [C# Abstract - Last Night Codes](https://lncodes.com/csharp-abstract) blog post for more in-depth discussion on this project’s topics.
+If you have any questions or wish to discuss anything related to this project, visit our [Discussion Forum]({{REPOSITORY_URL}}/discussions). You can also leave comments on the [BLOG_NAME - Last Night Codes](https://lncodes.com/csharp-abstract) blog post for a more in-depth discussion of this project's topics.
 
 <h2 id="license"> 📋 License</h2>
 

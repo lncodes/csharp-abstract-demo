@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lncodes.Examples.Abstract;
+namespace Lncodes.AbstractDemo;
 
 internal static class Program
 {
@@ -14,6 +14,7 @@ internal static class Program
         enemy.DisplayInitialStaminaPoint();
         enemy.Run();
         enemy.Rest();
+        Console.ReadLine();
     }
 
     /// <summary>
