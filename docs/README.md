@@ -7,11 +7,11 @@
 
 <h1 align="center">C# Abstract Demo</h1>
 <p align="center">
-  <a href="{{REPOSITORY_URL}}/actions/workflows/build.yml">
-    <img src="{{REPOSITORY_URL}}/actions/workflows/build.yml/badge.svg" />
+  <a href="https://github.com/lncodes/csharp-abstract-demo/actions/workflows/build.yml">
+    <img src="https://github.com/lncodes/csharp-abstract-demo/actions/workflows/build.yml/badge.svg" />
   </a>
-  <a href="https://sonarcloud.io/dashboard?id=lncodes_{{REPOSITORY_NAME}}">
-    <img src="https://sonarcloud.io/api/project_badges/measure?project=lncodes_{{REPOSITORY_NAME}}&metric=alert_status" />
+  <a href="https://sonarcloud.io/dashboard?id=lncodes_csharp-abstract-demo">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=lncodes_csharp-abstract-demo&metric=alert_status" />
   </a>
 </p>
 
@@ -49,7 +49,7 @@ To set up this C# project on your local machine, follow the steps below after en
       If you have Git installed, execute the following command to clone the repository:
 
       ```bash
-      git clone {{REPOSITORY_URL}}.git
+      git clone https://github.com/lncodes/csharp-abstract-demo.git
       ```
 
     - **Download as ZIP**
@@ -60,10 +60,10 @@ To set up this C# project on your local machine, follow the steps below after en
 
     Execute the following command to change to the project directory:
     ```bash
-    cd {{REPOSITORY_NAME}}
+    cd csharp-abstract-demo
     ```
 
-    > **Note:** Make sure you're in the correct parent directory where the `{{REPOSITORY_NAME}}` folder is located.
+    > **Note:** Make sure you're in the correct parent directory where the `csharp-abstract-demo` folder is located.
     
 3. **Restore Dependencies**
 
@@ -89,7 +89,7 @@ We appreciate your interest in contributing to this project! Please check out ou
 
 <h2 id="discussion">💬 Discussion</h2>
 
-If you have any questions or wish to discuss anything related to this project, visit our [Discussion Forum]({{REPOSITORY_URL}}/discussions). You can also leave comments on the [BLOG_NAME - Last Night Codes](https://lncodes.com/csharp-abstract) blog post for a more in-depth discussion of this project's topics.
+If you have any questions or wish to discuss anything related to this project, visit our [Discussion Forum](https://github.com/lncodes/csharp-abstract-demo/discussions). You can also leave comments on the [BLOG_NAME - Last Night Codes](https://lncodes.com/csharp-abstract) blog post for a more in-depth discussion of this project's topics.
 
 <h2 id="license"> 📋 License</h2>
 

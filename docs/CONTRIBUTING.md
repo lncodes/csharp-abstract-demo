@@ -1,10 +1,10 @@
 # Contribution Guidelines
-Thanks for your interest in contributing to **{{REPOSITORY_NAME}}** by Last Night Codes! Your contributions are crucial to the growth and success of this project. To ensure everything goes smoothly, please follow these guidelines.
+Thanks for your interest in contributing to **csharp-abstract-demo** by Last Night Codes! Your contributions are crucial to the growth and success of this project. To ensure everything goes smoothly, please follow these guidelines.
 
 ## 📝 Report Issues
 Reporting issues is crucial for maintaining the project's quality. To help us address issues effectively, follow these steps:
 
-1. Before reporting a new issue, check the project's [issue tracker]({{REPOSITORY_URL}}/issues) to see if the issue has already been reported.
+1. Before reporting a new issue, check the project's [issue tracker](https://github.com/lncodes/csharp-abstract-demo/issues) to see if the issue has already been reported.
 
 2. If the issue hasn't been reported, create a new issue using one of the relevant templates below:
    - 🐛 Bugs & Errors: [Bug Report Template](https://github.com/lncodes/.github/blob/main/.github/ISSUE_TEMPLATE/bug-report-template.md).
@@ -16,12 +16,12 @@ Reporting issues is crucial for maintaining the project's quality. To help us ad
 ## 🔧 Resolving Issues
 Resolving issues is essential to improving the project. Follow these steps to find, fix, and submit changes for any issues you encounter:
 
-1. Find the relevant issue in the project [issue tracker]({{REPOSITORY_URL}}/issues).
+1. Find the relevant issue in the project [issue tracker](https://github.com/lncodes/csharp-abstract-demo/issues).
 
 2. Fork the repository to your GitHub account.
 3. Clone your forked repository to your local machine.
    ```bash 
-    git clone {{REPOSITORY_URL}}.git
+    git clone https://github.com/lncodes/csharp-abstract-demo.git
    ```
 4. Create a new branch for your changes.
    ```bash 
